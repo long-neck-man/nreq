@@ -1,0 +1,37 @@
+{
+  "name": "nodereq-ui",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "rsbuild build",
+    "dev": "rsbuild",
+    "format": "prettier --write .",
+    "lint": "rslint",
+    "preview": "rsbuild preview",
+    "test": "rstest",
+    "test:watch": "rstest --watch"
+  },
+  "dependencies": {
+    "@xyflow/react": "^12.11.6",
+    "nodereq-pipeline": "workspace:*",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@rsbuild/core": "^2.2.5",
+    "@rsbuild/plugin-react": "^2.1.0",
+    "@rslint/core": "^0.9.0",
+    "@rstest/adapter-rsbuild": "^0.11.12",
+    "@rstest/core": "^0.11.12",
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "happy-dom": "^20.14.0",
+    "prettier": "^3.9.6",
+    "typescript": "^6.0.3"
+  }
+}
