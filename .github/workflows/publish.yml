@@ -39,10 +39,9 @@ jobs:
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v6
-        working-directory: ./apps/nodereq-ui
         with:
-          context: .
-          file: ./Dockerfile
+          context: ./apps/nodereq-ui
+          file: ./apps/nodereq-ui/Dockerfile
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
